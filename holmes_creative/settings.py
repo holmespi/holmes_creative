@@ -27,6 +27,18 @@ DATABASES = {
         'PORT': '',                      # Set to empty string for default.
     }
 }
+if os.environ.get('DATABASE_URL', None):
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql_psycopg2', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
+            'NAME': 'dukm32bdshlol',                      # Or path to database file if using sqlite3.
+            # The following settings are not used with sqlite3:
+            'USER': 'vkdbqzbbbbceom',
+            'PASSWORD': 'a1hzfIMMsCJa6a-yUBiebgdxfR',
+            'HOST': 'ec2-54-225-135-30.compute-1.amazonaws.com', # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
+            'PORT': '5432',                      # Set to empty string for default.
+        }
+    }
 
 # Hosts/domain names that are valid for this site; required if DEBUG is False
 # See https://docs.djangoproject.com/en/1.5/ref/settings/#allowed-hosts
@@ -133,6 +145,7 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
+    'gunicorn',
     'portfolio',
 )
 
