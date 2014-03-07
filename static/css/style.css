@@ -5,7 +5,8 @@ h1 {
   font-size: 14px; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #2a609e; }
 
 #nav {
   background-color: white;

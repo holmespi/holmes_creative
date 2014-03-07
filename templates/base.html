@@ -7,23 +7,26 @@
   <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
   <title>HOLMES.CREATIVE{{ page_title }}</title>
   <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css" />
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
+  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
 </head>
 <body>
-
 
   <div id="nav">
 
       <a href="/"><img src="{% static 'img/logo.png' %}"/></a>
       <div id="site_desc">
-      <h1>HOLMES.CREATIVE</h1>
+      <h1 class="colr">HOLMES.CREATIVE</h1>
  	    <p>{% block description %}
       {% endblock %}</p></div>
       <div id="links">
-      <a href="/{{ link }}">{{ link_title }}</a>{{ after_link }}
+      <a class="colr" href="/{{ link }}">{{ link_title }}</a>{{ after_link }}
       <br>
-   	  <a rel="next" href="{% static 'resume.pdf' %}">RESUME</a>
-      <p>HOLMESPI90@GMAIL.COM</p>
-      <p>(919)624-0237</p>
+   	  <a class="colr" rel="next" href="{% static 'resume.pdf' %}">RESUME</a>
+      <br>
+      <a class="colr" href="mailto:holmespi90@gmail.com?Subject=Hello" target="_top">EMAIL</a>
+      <p class="colr" >(919)624-0237</p>
       </div>
   </div>
   
@@ -40,6 +43,18 @@
   
     ga('create', 'UA-46112704-1', 'co.nf');
     ga('send', 'pageview');
+
+    $(document).ready(function() {
+    $('.colr').hover(function() {
+        var hue = 'rgb('
+            + (Math.floor(Math.random() * 256)) + ','
+            + (Math.floor(Math.random() * 256)) + ','
+            + (Math.floor(Math.random() * 256)) + ')';
+       $(this).stop().animate( { color: hue }, 300);
+    },function() {
+       $(this).stop().animate( { color: '#000' }, 300);
+    });
+});
   
   </script>
 
