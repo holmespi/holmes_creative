@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block description %}Here are some doodles from my sketcbook.{% endblock %}
+
+{% block content %}
+  <div id="folio">
+    {% for post in posts %}
+    <a href="{{ post.link }}"><img src="{{ post.image }}"></a>
+    <p>{{ post.desc }}</p>
+    {% endfor %}
+  </div>
+{% endblock %}
