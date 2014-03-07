@@ -13,6 +13,7 @@ def home(request):
 	'link_title': "SKETCHBOOK",
 	'before_link': '',
 	'page_title': ' | Home',
+	'long_desc': 'Providing creative design and hype solutions. The work displayed has been selected from various work done for clients over my career.',
 	}
 	context_dict['posts'] = posts
 	return render_to_response('home.html', context_dict, context)
@@ -26,6 +27,7 @@ def sketchbook(request):
 	'link_title': "HOME ",
 	'after_link': '-> SKETCHBOOK',
 	'page_title': ' | Sketchbook',
+	'long_desc': 'Here are some doodles from my sketchbook.'
 	}
 	context_dict['posts'] = posts
 	return render_to_response('home.html', context_dict, context)

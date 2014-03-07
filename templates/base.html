@@ -18,8 +18,7 @@
       <a href="/"><img src="{% static 'img/logo.png' %}"/></a>
       <div id="site_desc">
       <h1 class="colr">HOLMES.CREATIVE</h1>
- 	    <p>{% block description %}
-      {% endblock %}</p></div>
+ 	    <p>{{ long_desc }}</p></div>
       <div id="links">
       <a class="colr" href="/{{ link }}">{{ link_title }}</a>{{ after_link }}
       <br>
