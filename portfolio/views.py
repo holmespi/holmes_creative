@@ -23,8 +23,8 @@ def sketchbook(request):
 	context_dict = {
 	'link': "",
 	'link_title': "HOME ",
-	'after_link': '-> SKETCHBOOK'
-	'page_title': ' | Sketchbook'
+	'after_link': '-> SKETCHBOOK',
+	'page_title': ' | Sketchbook',
 	}
 	context_dict['posts'] = posts
 	return render_to_response('home.html', context_dict, context)
