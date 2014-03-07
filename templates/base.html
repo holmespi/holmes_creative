@@ -14,14 +14,17 @@
   <div id="nav">
 
       <a href="/"><img src="{% static 'img/logo.png' %}"/></a>
+      <div id="site_desc">
       <h1>HOLMES.CREATIVE</h1>
- 	    <p id="site_desc">{% block description %}
-      {% endblock %}</p>
+ 	    <p>{% block description %}
+      {% endblock %}</p></div>
+      <div id="links">
       <a href="/{{ link }}">{{ link_title }}</a>{{ after_link }}
       <br>
    	  <a rel="next" href="{% static 'resume.pdf' %}">RESUME</a>
       <p>HOLMESPI90@GMAIL.COM</p>
       <p>(919)624-0237</p>
+      </div>
   </div>
   
   

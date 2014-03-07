@@ -40,9 +40,17 @@ a {
 		margin-top: 0px;
 	}
 
-	p#site_desc {
+	#site_desc {
 		@media #{$bm} {
-			display: none;
+			float: right;
+			width: 200px;
+			margin-right: 20px;
+			margin-top: 0px;
+		}
+	}
+	#links {
+		@media #{$bm} {
+			margin-top: 20px;
 		}
 	}
 }
