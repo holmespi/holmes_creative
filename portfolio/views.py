@@ -11,7 +11,8 @@ def home(request):
 	context_dict = {
 	'link': "sketchbook",
 	'link_title': "SKETCHBOOK",
-	'before_link': ''
+	'before_link': '',
+	'page_title': ' | Home',
 	}
 	context_dict['posts'] = posts
 	return render_to_response('home.html', context_dict, context)
