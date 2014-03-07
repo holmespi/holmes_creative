@@ -21,7 +21,7 @@ def home(request):
 def sketchbook(request):
 	context = RequestContext(request)
 
-	posts = item.objects.filter(sketch=True)
+	posts = item.objects.filter(sketch=True).order_by('-id')
 	context_dict = {
 	'link': "",
 	'link_title': "HOME ",
