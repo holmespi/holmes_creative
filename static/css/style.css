@@ -9,7 +9,7 @@ a {
 
 #nav {
   background-color: white;
-  width: 250px;
+  width: 220px;
   height: 1000px;
   position: fixed;
   padding: 10px;
@@ -37,7 +37,8 @@ a {
         margin-right: 30px;
         width: 80px; } }
   #nav p {
-    margin-top: 0px; }
+    margin-top: 0px;
+    text-align: justify; }
   @media screen and (min-width: 501px) and (max-width: 780px) {
     #nav #site_desc {
       float: right;
@@ -57,7 +58,7 @@ a {
 
 #folio {
   float: left;
-  margin-left: 300px; }
+  margin-left: 240px; }
   @media screen and (min-width: 501px) and (max-width: 780px) {
     #folio {
       float: left;
