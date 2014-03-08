@@ -4,13 +4,18 @@ from django.db import models
 
 class item(models.Model):
 	image = models.URLField(max_length=255)
-	link = models.URLField(max_length=255)
-	desc = models.TextField()
-	sketch = models.BooleanField()
+	link = models.URLField(max_length=255, blank=True)
+	desc = models.TextField(blank=True)
 	priority = models.IntegerField(default=0)
 
 class freeLunch(models.Model):
 	image = models.URLField(max_length=255)
-	link = models.URLField(max_length=255)
-	desc = models.TextField()
+	link = models.URLField(max_length=255, blank=True)
+	desc = models.TextField(blank=True)
+	priority = models.IntegerField(default=0)
+
+class sketch(models.Model):
+	image = models.URLField(max_length=255)
+	link = models.URLField(max_length=255, blank=True)
+	desc = models.TextField(blank=True)
 	priority = models.IntegerField(default=0)
