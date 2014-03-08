@@ -54,6 +54,8 @@ p {
   #nav p {
     margin-top: 0px;
     text-align: justify; }
+  #nav #social {
+    margin-top: -10px; }
   @media screen and (min-width: 501px) and (max-width: 780px) {
     #nav #site_desc {
       float: right;

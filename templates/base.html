@@ -23,6 +23,7 @@
       <a href="/"><img src="{% static 'img/logo.svg' %}" alt="HOLMES.CREATIVE"/></a>
       <div id="site_desc">
       <a href="/"><h1 class="colr">HOLMES.CREATIVE</h1></a>
+      <div id="social"><a class="colr "href="//www.facebook.com/paulsartanddesign">fb.</a> | <a class="colr" href="//twitter.com/holmescreative">tw.</a></div>
  	    <p>{{ long_desc }}</p></div>
       <div id="links">
       <a class="colr" href="/{{ link }}">{{ link_title }}</a>{{ after_link }}
@@ -55,7 +56,7 @@
             + (Math.floor(Math.random() * 256)) + ','
             + (Math.floor(Math.random() * 256)) + ','
             + (Math.floor(Math.random() * 256)) + ')';
-       $(this).stop().animate( { color: hue }, 300);
+       $(this).stop().animate( { color: hue }, 150);
     },function() {
        $(this).stop().animate( { color: '#2a609e' }, 300);
     });
