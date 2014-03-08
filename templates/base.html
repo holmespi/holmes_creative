@@ -5,6 +5,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+  <meta property="og:image" content="{% static 'img/logo.png' %}"/>
+  <meta property="og:title" content="HOLMES.CREATIVE{{ page_title }}"/>
+  <meta property="og:site_name" content="HOLMES.CREATIVE"/>
+  <meta property="og:type" content="company"/>
   <title>HOLMES.CREATIVE{{ page_title }}</title>
   <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css" />
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -15,7 +19,7 @@
 
   <div id="nav">
 
-      <a href="/"><img src="{% static 'img/logo.png' %}"/>
+      <a href="/"><img src="{% static 'img/logo.svg' %}"/>
       <div id="site_desc">
       <h1 class="colr">HOLMES.CREATIVE</h1></a>
  	    <p>{{ long_desc }}</p></div>
