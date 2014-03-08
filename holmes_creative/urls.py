@@ -22,4 +22,5 @@ urlpatterns = patterns('',
     url(r'^$', views.home, name='home'),
 
     url(r'^sketchbook/', views.sketchbook, name='sketchbook'),
+    url(r'^freelunch/', views.freelunch, name='freelunch'),
 )
