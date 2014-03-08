@@ -1,4 +1,5 @@
 from django.conf.urls import patterns, include, url
+from django.views.generic import RedirectView
 from portfolio import views
 
 # Uncomment the next two lines to enable the admin:
@@ -16,7 +17,7 @@ urlpatterns = patterns('',
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
 
-    (r'^favicon\.ico$', 'django.views.generic.simple.redirect_to', {'url': '/static/img/favicon.ico'}),
+    (r'^favicon\.ico$', RedirectView.as_view(url='/static/img/favicon.ico')),
 
     url(r'^$', views.home, name='home'),
 
