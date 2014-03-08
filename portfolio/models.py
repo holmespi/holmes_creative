@@ -7,3 +7,4 @@ class item(models.Model):
 	link = models.URLField(max_length=255)
 	desc = models.TextField()
 	sketch = models.BooleanField()
+	newfiedl = models.TextField()
