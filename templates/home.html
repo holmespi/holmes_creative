@@ -4,7 +4,7 @@
 {% block content %}
   <div id="folio">
     {% for post in posts %}
-    <a href="{{ post.link }}"><img src="{{ post.image }}"></a>
+    <a href="{{ post.link }}"><img src="{{ post.image }}" alt="{{ post.image }}"></a>
     <p>{{ post.desc }}</p>
     {% endfor %}
   </div>
