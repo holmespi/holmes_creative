@@ -123,7 +123,7 @@ p {
 	@media #{$bmshort} {
 		margin-top: 0px;
 	}
-	img {
+	img.item {
 		max-width: 800px;
 		width: 100%;
 		@media #{$bm} {

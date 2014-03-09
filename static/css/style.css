@@ -101,14 +101,14 @@ p {
   @media screen and (max-height: 321px) {
     #folio {
       margin-top: 0px; } }
-  #folio img {
+  #folio img.item {
     max-width: 800px;
     width: 100%; }
     @media screen and (min-width: 501px) and (max-width: 780px) {
-      #folio img {
+      #folio img.item {
         width: 100%; } }
     @media screen and (max-width: 500px) {
-      #folio img {
+      #folio img.item {
         width: 100%; } }
   #folio p {
     margin-top: -3px;
