@@ -17,7 +17,7 @@ p {
   height: 1000px;
   position: fixed;
   padding: 10px;
-  margin-left: -10px; }
+  margin-left: 0px; }
   @media screen and (min-width: 501px) and (max-width: 960px) {
     #nav {
       margin-top: -10px;
@@ -87,7 +87,7 @@ p {
 
 #folio {
   float: left;
-  margin-left: 330px; }
+  margin-left: 255px; }
   @media screen and (min-width: 501px) and (max-width: 960px) {
     #folio {
       margin-top: 160px;
@@ -102,7 +102,7 @@ p {
     #folio {
       margin-top: 0px; } }
   #folio img.item {
-    max-width: 800px;
+    max-width: 960px;
     width: 100%; }
     @media screen and (min-width: 501px) and (max-width: 960px) {
       #folio img.item {

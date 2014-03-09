@@ -26,7 +26,7 @@ p {
 	height: 1000px;
 	position: fixed;
 	padding: 10px;
-	margin-left: -10px;
+	margin-left: 0px;
 
 	@media #{$bm} {
 		margin-top: -10px;
@@ -109,7 +109,7 @@ p {
 
 #folio {
 	float: left;
-	margin-left: 330px;
+	margin-left: 255px;
 	@media #{$bm} {
 		margin-top: 160px;
 		margin-left: 0;
@@ -124,7 +124,7 @@ p {
 		margin-top: 0px;
 	}
 	img.item {
-		max-width: 800px;
+		max-width: 960px;
 		width: 100%;
 		@media #{$bm} {
 			max-width:960px;
