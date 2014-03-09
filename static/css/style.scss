@@ -5,11 +5,11 @@ $bm: "screen and (min-width: 501px) and (max-width: 780px)";
 
 
 body {
-	font-size: 13px;
+	font-size: 16px;
 }
 
 h1 {
-	font-size: 14px;
+	font-size: 18px;
 }
 
 a {
@@ -117,7 +117,7 @@ p {
 	}
 	@media #{$bs} {
 			float: left;
-			margin-top: 190px;
+			margin-top: 230px;
 			margin-left: 0;
 		}
 	@media #{$bmshort} {
