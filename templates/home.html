@@ -5,7 +5,7 @@
   <div id="folio">
     {% for post in posts %}
     <a href="{{ post.link }}"><img class="item" src="{{ post.image }}" alt="{{ post.image }}"></a>
-    <p>{{ post.desc }}</p>
+    <div id="p"><p>{{ post.desc }}</p><p>*</p></div>
     {% endfor %}
   </div>
 {% endblock %}

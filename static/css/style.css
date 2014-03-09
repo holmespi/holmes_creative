@@ -18,16 +18,16 @@ p {
   position: fixed;
   padding: 10px;
   margin-left: -10px; }
-  @media screen and (min-width: 501px) and (max-width: 780px) {
+  @media screen and (min-width: 501px) and (max-width: 960px) {
     #nav {
       margin-top: -10px;
       width: 100%;
-      height: 130px; } }
+      height: 150px; } }
   @media screen and (max-width: 500px) {
     #nav {
       margin-top: -10px;
       width: 100%;
-      height: 180px; } }
+      height: 210px; } }
   @media screen and (max-height: 321px) {
     #nav {
       position: relative;
@@ -35,12 +35,12 @@ p {
       width: 100%;
       height: 100px; } }
   #nav img {
-    width: 150px; }
-    @media screen and (min-width: 501px) and (max-width: 780px) {
+    width: 200px; }
+    @media screen and (min-width: 501px) and (max-width: 960px) {
       #nav img {
         float: left;
         margin-right: 30px;
-        width: 80px; } }
+        width: 120px; } }
     @media screen and (max-width: 500px) {
       #nav img {
         float: left;
@@ -56,7 +56,7 @@ p {
     text-align: justify; }
   #nav #social {
     margin-top: -10px; }
-  @media screen and (min-width: 501px) and (max-width: 780px) {
+  @media screen and (min-width: 501px) and (max-width: 960px) {
     #nav #site_desc {
       float: right;
       width: 200px;
@@ -75,7 +75,7 @@ p {
       width: 200px;
       margin-right: 20px;
       margin-top: 0px; } }
-  @media screen and (min-width: 501px) and (max-width: 780px) {
+  @media screen and (min-width: 501px) and (max-width: 960px) {
     #nav #links {
       margin-top: 20px; } }
   @media screen and (max-width: 500px) {
@@ -87,12 +87,12 @@ p {
 
 #folio {
   float: left;
-  margin-left: 240px; }
-  @media screen and (min-width: 501px) and (max-width: 780px) {
+  margin-left: 330px; }
+  @media screen and (min-width: 501px) and (max-width: 960px) {
     #folio {
-      float: left;
       margin-top: 160px;
-      margin-left: 0; } }
+      margin-left: 0;
+      margin-right: 0; } }
   @media screen and (max-width: 500px) {
     #folio {
       float: left;
@@ -104,14 +104,18 @@ p {
   #folio img.item {
     max-width: 800px;
     width: 100%; }
-    @media screen and (min-width: 501px) and (max-width: 780px) {
+    @media screen and (min-width: 501px) and (max-width: 960px) {
       #folio img.item {
+        max-width: 1000px;
         width: 100%; } }
     @media screen and (max-width: 500px) {
       #folio img.item {
         width: 100%; } }
   #folio p {
-    margin-top: -3px;
+    margin-top: 0px;
     width: 100%;
-    max-width: 800px;
-    text-align: justify; }
+    max-width: 960px;
+    text-align: center; }
+  #folio div#p {
+    margin: 0 auto;
+    width: 100%; }
